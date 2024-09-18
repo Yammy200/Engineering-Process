@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sprite {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.hoverable:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+.hover-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: black;
+    display: none;
+}
+
+.hover-visible {
+    display: block;
+}
